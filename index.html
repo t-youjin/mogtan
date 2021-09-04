@@ -482,8 +482,8 @@
 			// scroll to cart (commented; was a failed attempt to prevent scroll-on-drag on some browsers)
 			// p8_frame.scrollIntoView(true);
 
-			document.getElementById("touch_controls_gfx").style.display="table";
-			document.getElementById("touch_controls_background").style.display="table";
+			document.getElementById("touch_controls_gfx").style.display="none";
+			document.getElementById("touch_controls_background").style.display="none";
 
 		}
 		else{
@@ -655,7 +655,7 @@
 	var P8_DPAD_RIGHT = {action:'button', code: 0x2};
 	var P8_DPAD_UP = {action:'button', code: 0x4};
 	var P8_DPAD_DOWN = {action:'button', code: 0x8};
-	var P8_MENU = {action:'menu'};
+	var P8_MENU = {action:'menu_none'};
 	var P8_NO_ACTION = {action:'none'};
 
 	var P8_BUTTON_MAPPING = [
